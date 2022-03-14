@@ -1,0 +1,35 @@
+.banner {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-color: var(--footercolor);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner__title {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--hedercolor);
+
+  text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62em;
+  text-transform: uppercase;
+
+  @include min-1200 {
+    font-size: 44px;
+    line-height: 1.36em;
+  }
+}
+.banner__button {
+  margin: 0 auto;
+}

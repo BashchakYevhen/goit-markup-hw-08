@@ -1,0 +1,32 @@
+.projects {
+  padding-bottom: 94px;
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
+}
+.projects__card-list {
+  display: flex;
+}
+.projects__card-item {
+  position: relative;
+  margin-right: 30px;
+  background-color: var(--hedercolor);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.projects__card-description {
+  position: absolute;
+  bottom: 0px;
+  @include flex();
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
