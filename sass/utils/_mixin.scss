@@ -3,19 +3,20 @@
   align-items: $align;
   justify-content: $justify;
 }
-@mixin min-480 {
-  @media screen and(min-width: 480px) {
-    @content;
-  }
-}
-@mixin min-768 {
-  @media screen and (min-width: 768px) {
+@mixin tel {
+  @media screen and(min-width:480px) {
     @content;
   }
 }
 
-@mixin min-1200 {
-  @media screen and (min-width: 1200px) {
+@mixin tab {
+  @media screen and(min-width:768px) {
+    @content;
+  }
+}
+
+@mixin desc {
+  @media screen and(min-width:1200px) {
     @content;
   }
 }

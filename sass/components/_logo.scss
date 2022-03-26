@@ -1,10 +1,12 @@
 .logo {
-  @include min-1200 {
-    margin-right: 93px;
-  }
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--activecolor);
-  line-height: 1.2em;
-  font-size: 26px;
   font-family: raleway;
   font-weight: 700;
+  @include desc {
+    line-height: 1.2em;
+    font-size: 26px;
+    margin-right: 93px;
+  }
 }

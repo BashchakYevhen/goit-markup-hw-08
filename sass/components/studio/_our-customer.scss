@@ -1,22 +1,28 @@
 .client__block {
-  padding: 94px 0;
+  padding: 60px 15px;
+  @include desc {
+    padding: 94px 15px;
+  }
 }
 
 .client__list {
   @include flex();
-  @media screen and (max-width: 768px) {
+  @media screen and(max-width:1199px) {
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 .client__item {
-  @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
-    flex-basis: calc(100% / 3);
-    &:nth-child(even) {
-      margin-left: 30px;
-    }
+  flex-basis: calc((100% - 60px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  @include tab {
+    flex-basis: calc((100% - 90px) / 3);
   }
-  @include min-768 {
+  @include desc {
+    margin-right: 0px;
+    margin-bottom: 0px;
     & + & {
       margin-left: 30px;
     }
@@ -24,7 +30,7 @@
 }
 .client__link {
   @include flex();
-  width: 170px;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -35,6 +41,14 @@
   &:focus {
     color: var(--activecolor);
     border: 1px solid var(--activecolor);
+  }
+  @include tab {
+    width: 226px;
+    height: 92px;
+  }
+  @include desc {
+    width: 170px;
+    height: 92px;
   }
 }
 

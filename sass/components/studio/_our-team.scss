@@ -2,17 +2,29 @@
   background-color: var(--filterbutt);
 }
 .team__card-list {
-  @include min-768 {
+  @include tab {
     display: flex;
+  }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 .team__card-item {
-  @include min-768 {
-    margin-right: 30px;
-  }
   background-color: var(--hedercolor);
+  margin-bottom: 30px;
   &:last-child {
     margin-right: 0;
+  }
+  @include tab {
+    margin-right: 30px;
+  }
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2);
+    max-width: 354px;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 }
 

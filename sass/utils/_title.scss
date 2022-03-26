@@ -1,9 +1,12 @@
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   color: var(--headtext);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2em;
   align-items: center;
+  @include desc {
+    margin-bottom: 50px;
+  }
 }
