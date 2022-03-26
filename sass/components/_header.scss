@@ -83,6 +83,10 @@ header {
       opacity: 0;
       transition: opacity var(--time-duration) var(--cubik);
     }
+    @include desc {
+      bottom: -27.6px;
+    }
+
     &:hover::after,
     &:focus::after {
       opacity: 1;
@@ -104,6 +108,9 @@ header {
       background: var(--activecolor);
       border-radius: 2px;
       opacity: 1;
+      @include desc {
+        bottom: -27.6px;
+      }
     }
   }
 }
@@ -128,7 +135,7 @@ header {
 }
 
 .header__contact-item {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     & + & {
       margin-top: 32px;
     }
@@ -147,7 +154,7 @@ header {
 }
 
 .header__contact-link {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     font-size: 24px;
   }
   color: var(--textcolor);
