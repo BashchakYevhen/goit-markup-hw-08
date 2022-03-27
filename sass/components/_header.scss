@@ -89,6 +89,9 @@ header {
 
     &:hover::after,
     &:focus::after {
+      @include desc {
+        bottom: -27.6px;
+      }
       opacity: 1;
     }
   }

@@ -74,7 +74,7 @@
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.56;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
@@ -82,6 +82,9 @@
   .card-set__link:focus & {
     opacity: 1;
     transform: translateY(0px);
+  }
+  @include tel {
+    font-size: 18px;
   }
 }
 
