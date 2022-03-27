@@ -20,11 +20,16 @@
   }
 
   @media screen and(min-width:768px) and (max-width: 1199px) {
-    flex-basis: calc(100% / 2);
-    max-width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
     &:nth-child(even) {
       margin-right: 0;
     }
+  }
+  @include desc {
+    margin-bottom: 0;
   }
 }
 
