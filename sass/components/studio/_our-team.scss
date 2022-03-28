@@ -13,14 +13,14 @@
   background-color: var(--hedercolor);
   margin-bottom: 30px;
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
   }
   @include tab {
     margin-right: 30px;
   }
 
   @media screen and(min-width:768px) and (max-width: 1199px) {
-    flex-basis: calc(100% / 2 - 30px);
+    // flex-basis: calc(100% / 2);
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }

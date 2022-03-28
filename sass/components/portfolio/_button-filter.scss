@@ -1,12 +1,16 @@
 .butt__list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   @media screen and(max-width:767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   @include tab {
+    margin-bottom: 30px;
     justify-content: center;
+  }
+  @include desc {
+    margin-bottom: 50px;
   }
 }
 .butt__item {

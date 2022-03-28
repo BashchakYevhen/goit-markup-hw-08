@@ -1,6 +1,6 @@
 .banner {
   margin: 0 auto;
-  max-width: 479px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--footercolor);
@@ -13,9 +13,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/studio-tab/Header-img-min.jpg);
@@ -23,14 +20,12 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../image/studio-tab/Header-img@2x-min.jpg);
     }
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../image/studio-desc/Header.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
     @include dpi {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../image/studio-desc/Header@2x.jpg);

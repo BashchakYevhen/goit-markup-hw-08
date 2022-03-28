@@ -5,6 +5,7 @@ footer {
 .footer {
   @include desc {
     display: flex;
+    align-items: baseline;
   }
 }
 .footer__tablet {
@@ -12,10 +13,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
   }
   @include desc {
     display: flex;
+    align-items: baseline;
   }
 }
 .left-side-foot {
@@ -27,6 +29,11 @@ footer {
 }
 .footer__logo__text {
   color: var(--hedercolor);
+}
+.footer__address-list {
+  @include desc {
+    text-align: start;
+  }
 }
 .footer__address-item {
   margin-bottom: 9px;
@@ -58,7 +65,6 @@ footer {
   }
   @include desc {
     margin-left: 72px;
-    margin-top: 12px;
   }
 }
 .social__title {
@@ -84,7 +90,7 @@ footer {
 .spam {
   margin-top: 60px;
   @include desc {
-    margin-top: 12px;
+    margin-top: 0px;
     margin-left: 93px;
     width: 570px;
   }
